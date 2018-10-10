@@ -1,53 +1,198 @@
-header{
-	width: 100%;
-	height: 10%;
-	background: #5b7989;
-	color: white;
-	border-radius: 10px 10px 0px 0px;
+body{
+	font-family: 'Dancing Script', cursive;
+	background: #02010a;
 }
 
-header h1{
-	flex-flow: right;
+img{
+	filter: drop-shadow(2px 2px 2px #02010a);
 }
 
-header nav{
-	flex-flow: right;
+/*Movile*/
+@media (max-width: 899px) {
+	
+	/*Header*/
+	header{
+		width: 94%;
+		padding: 3%;
+		background: #5b7989;
+		color: white;
+		border-radius: 10px 10px 0px 0px;
+		text-align: center;
+	}
+
+	header h1{
+		flex-flow: right;
+	}
+
+	header nav{
+		flex-flow: right;
+	}
+
+	/*Contenido*/
+	#contenido{
+		width: 100%;
+	}
+
+/*--------------------------Inicio Index---------------------------------*/
+
+	/*Imagen Central*/
+	#img_central{
+		background:  #82c3a6;
+		width: 100%;
+		text-align: center;
+	}
+
+	#img_central img{
+		padding: 5%;
+		width: 80%;
+		
+	}
+
+	/*Imagenes Secundarias*/
+	#img_secundarias{
+		background: #d5c75f;
+		border: 1px;
+		padding-bottom: 5%;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	#img_secundarias img{
+		padding-top: 5%; 
+		width: 80%;
+	}
+/*--------------------------Fin Index------------------------------------*/
+
+/*--------------------------Inicio Paisajes------------------------------*/
+	#paisajes{
+		background: #d5c75f;
+		width: 100%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+
+	#paisajes img{
+		width: 80%;
+		padding-top: 5%;
+	}
+/*--------------------------Fin Paisajes---------------------------------*/
+
+/*--------------------------Inicio Retratos------------------------------*/
+	#retratos{
+		background: #d5c75f;
+		width: 100%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+
+	#retratos img{
+		width: 80%;
+		padding-top: 5%;
+	}
+/*--------------------------Fin Retratos---------------------------------*/
+
+	/*Footer*/
+	footer{
+		background: #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+		padding: 5%;
+	}
 }
 
-#img_central{
-	background:  #82c3a6;
-	padding: 10px;
-	text-align: center;
+/*Desktop*/
+@media (min-width: 900px) {
+	
+	/*Header*/
+	header{
+		width: 96%;
+		padding: 2%;
+		background: #5b7989;
+		color: white;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	header h1{
+		flex-flow: right;
+	}
+
+	header nav{
+		flex-flow: right;
+	}
+
+	/*Contenido*/
+	#contenido{
+		width: 100%;
+	}
+
+/*--------------------------Inicio Index---------------------------------*/
+
+	/*Imagen Central*/
+	#img_central{
+		background:  #82c3a6;
+		width: 100%;
+		text-align: center;
+	}
+
+	#img_central img{
+		padding: 5%;
+		width: 80%;		
+	}
+
+	/*Imagenes Secundarias*/
+	#img_secundarias{
+		background: #d5c75f;
+		border: 1px;
+		padding-bottom: 5%;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	#img_secundarias img{
+		padding-top: 5%; 
+		width: 80%;
+	}
+
+	.img_paisaje{
+		width: 50%;
+	}
+
+	.img_retrato{
+		width: 50%;
+	}
+/*--------------------------Fin Index------------------------------------*/
+
+/*--------------------------Inicio Paisajes------------------------------*/
+	#paisajes{
+		background: #d5c75f;
+		width: 100%;
+		text-align: center;
+	}
+
+	#paisajes img{
+		width: 28%;
+		padding: 2%;
+	}
+/*--------------------------Fin Paisajes---------------------------------*/
+
+/*--------------------------Inicio Retratos------------------------------*/
+	#retratos{
+		background: #d5c75f;
+		width: 100%;
+		text-align: center;
+	}
+
+	#retratos img{
+		width: 28%;
+		padding: 2%;
+	}
+/*--------------------------Fin Retratos---------------------------------*/
+
+	/*Footer*/
+	footer{
+		background: #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+		padding: 5%;
+	}
 }
 
-#img_secundarias{
-	background: #d5c75f;
-	border: 1px;
-	text-align: center;
-	text-decoration: underline;
-}
 
-#img_secundarias img{
-	width: 40%;
-}
-
-#paisajes{
-	background: #d5c75f;
-}
-
-#paisajes img{
-	width: 450px;
-}
-
-#retratos{
-	background: #d5c75f;
-}
-
-#retratos img{
-	width: 450px;
-}
-
-footer{
-	background: #C6d5c5;
-	border-radius: 0px 0px 10px 10px;
-}
