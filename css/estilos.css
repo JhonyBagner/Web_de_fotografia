@@ -7,26 +7,127 @@ img{
 	filter: drop-shadow(2px 2px 2px #02010a);
 }
 
-/*Movile*/
+/*-----------------------------ANIMACIONES-------------------------------*/
+/*Animación de imagen paisaje en index*/
+
+
+#enlace1:hover{
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	-webkit-transform: rotateZ(10deg);
+	-ms-transform: rotateZ(10deg);
+	transform: rotateZ(10deg);
+}
+
+
+
+/*Animación de imagen retrato en index*/
+#enlace2:hover{
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	-webkit-transform: translate(20px, -5px);
+	-ms-transform: translate(20px, -5px);
+	transform: translate(20px, -5px);
+}
+
+/*Animación de slidein del header*/
+header{
+	animation: headerAnimation 1s;
+}
+
+@-webkit-keyframes headerAnimation{
+	0%{margin-top: 150%;}
+	60%{margin-top: -5%;}
+	100%{margin-top: 0%;}
+}
+
+/*-----------------------------END ANIMACIONES---------------------------*/
+
+/*-----------------------------FILTROS-----------------------------------*/
+/*Filtros de los paisajes*/
+.paisaje1{
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+}
+
+.paisaje2, .paisaje4, .paisaje6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.paisaje3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+/*Filtros de los retratos*/
+.retrato1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.retrato2, .retrato4, .retrato6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.retrato3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+/*-----------------------------END FILTROS-------------------------------*/
+
+/*-----------------------------MOVILE------------------------------------*/
 @media (max-width: 899px) {
+
+	#enlace1:hover{
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	-webkit-transform: rotateZ(10deg);
+	-ms-transform: rotateZ(10deg);
+	transform: rotateZ(10deg);
+}
+
+
+
+/*Animación de imagen retrato en index*/
+#enlace2:hover{
+	filter: drop-shadow(2px 2px 2px #82c3a6);
+	-webkit-transform: translate(20px, -5px);
+	-ms-transform: translate(20px, -5px);
+	transform: translate(20px, -5px);
+}
 	
 	/*Header*/
 	header{
-		width: 94%;
-		padding: 3%;
+		width: 96%;
+		padding: 2%;
 		background: #5b7989;
 		color: white;
 		border-radius: 10px 10px 0px 0px;
-		text-align: center;
 	}
 
 	header h1{
-		flex-flow: right;
+		width: 100%;
+		text-align: center;
+		text-shadow: 2px 2px 2px #02010a;
 	}
 
 	header nav{
-		flex-flow: right;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
 	}
+
+	nav h2{
+		padding: 2%;
+	}
+
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.pagina1{flex-grow: 3; text-align: right;}
+	.pagina2{flex-grow: 1; text-align: center;}
+	.pagina3{flex-grow: 3; text-align: left;}
 
 	/*Contenido*/
 	#contenido{
@@ -97,9 +198,17 @@ img{
 		border-radius: 0px 0px 10px 10px;
 		padding: 5%;
 	}
-}
+	footer img{
+		width: 13px;
+	}
 
-/*Desktop*/
+	footer a{
+		color: black;
+	}
+}
+/*-----------------------------END MOVILE--------------------------------*/
+
+/*-----------------------------DESKTOP-----------------------------------*/
 @media (min-width: 900px) {
 	
 	/*Header*/
@@ -109,15 +218,36 @@ img{
 		background: #5b7989;
 		color: white;
 		border-radius: 10px 10px 0px 0px;
+		display: flex;
+		flex-flow: row wrap;
 	}
 
 	header h1{
-		flex-flow: right;
+		width: 50%;
+		text-shadow: 2px 2px 2px #02010a;
 	}
 
 	header nav{
-		flex-flow: right;
+		width: 50%;
+		text-align: right;
+		display: flex;
+		flex-flow: row wrap;
 	}
+
+	nav h2{
+		float: right;
+		text-align: right;
+		padding: 2%;
+	}
+
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.pagina1{flex-grow: 98}
+	.pagina2{flex-grow: 1}
+	.pagina3{flex-grow: 1}
 
 	/*Contenido*/
 	#contenido{
@@ -145,6 +275,8 @@ img{
 		padding-bottom: 5%;
 		text-align: center;
 		text-decoration: underline;
+		display: flex;
+		flex-flow: row wrap;
 	}
 
 	#img_secundarias img{
@@ -192,7 +324,21 @@ img{
 		background: #C6d5c5;
 		border-radius: 0px 0px 10px 10px;
 		padding: 5%;
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	footer section{
+		width: 25%;
+	}
+
+	footer img{
+		width: 13px;
+	}
+
+	footer a{
+		color: black;
 	}
 }
-
+/*-----------------------------END DESKTOP-------------------------------*/
 
